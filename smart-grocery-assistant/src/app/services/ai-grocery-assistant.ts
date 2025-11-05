@@ -35,7 +35,7 @@ export class AiGroceryAssistant {
     this.apiRequest.set({ items: greoceryItems });
   }
 
-  clearSuggesttion() {
+  clearSuggestions() {
     this.apiRequest.set(null)
   }
 

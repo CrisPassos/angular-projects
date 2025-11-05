@@ -1,59 +1,38 @@
-# SmartGroceryAssistant
+## Smart Grocery Assistant
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+O **Smart Grocery Assistant** é um projeto desenvolvido utilizando Angular 20, Vertex AI e um backend em Express. O objetivo do aplicativo é fornecer sugestões inteligentes de compras, otimizando a experiência do usuário.
 
-## Development server
+### Tecnologias Utilizadas
 
-To start a local development server, run:
+- **Angular 20**: Framework para construção da interface do usuário, utilizando signals ao invés de RXJS.
+- **Vertex AI**: Serviço de inteligência artificial para gerar sugestões de compras.
+- **Express**: Framework backend para gerenciar as requisições HTTP.
 
-```bash
-ng serve
-```
+### Funcionalidades
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Sistema de Sugestões**: Utiliza o Vertex AI para fornecer recomendações personalizadas.
+- **Atualização em Tempo Real**: Utiliza signals e computed para atualizar os dados dinamicamente.
+- **Renderização Baseada em URL**: O sistema é renderizado novamente sempre que há mudanças na URL.
 
-## Code scaffolding
+### Estrutura do Projeto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Home Component**: Contém os serviços principais, incluindo o AI Assistant Service.
+- **Backend**: Implementado com Express para gerenciar as requisições HTTP.
 
-```bash
-ng generate component component-name
-```
+### Observações
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- O aplicativo não utiliza RXJS, mas sim signals para gerenciamento de estado.
+- A cada requisição HTTP, o sistema é renderizado novamente, garantindo que os dados estejam sempre atualizados.
 
-```bash
-ng generate --help
-```
+### Como Executar
 
-## Building
+1. Clone o repositório.
+2. Instale as dependências com `npm install`.
+3. Inicie o servidor backend com `npm run server`.
+4. Inicie o aplicativo Angular com `ng serve`.
+5. Acesse o aplicativo em `http://localhost:4200`.
 
-To build the project run:
+### Tutorial
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- https://www.youtube.com/watch?v=OTlnvCpOp00&t=2139s
+- https://github.com/AhsanAyaz/angular-ai-smart-groceries-tutorial/blob/main/TUTORIAL.md

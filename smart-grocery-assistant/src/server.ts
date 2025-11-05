@@ -25,6 +25,7 @@ app.use(cors());
 app.use(express.json());
 
 // AI-Powered Smart Suggestions Endpoint
+//Chama o Genkit
 app.post('/api/smart-suggestions', async (req, res) => {
   try {
     const { items } = req.body;
