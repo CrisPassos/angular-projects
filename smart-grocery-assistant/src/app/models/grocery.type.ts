@@ -30,6 +30,7 @@ export enum GroceryCategory {
   PANTRY = 'pantry',
   BEVERAGES = 'beverages',
   SNACKS = 'snacks',
+  VEGETABLES = 'vegetables',
   OTHER = 'other',
 }
 

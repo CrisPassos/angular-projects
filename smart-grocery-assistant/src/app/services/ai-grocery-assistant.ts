@@ -31,7 +31,7 @@ export class AiGroceryAssistant {
   readonly isLoading = this.smartSuggestionResource.isLoading;
   readonly error = this.smartSuggestionResource.error;
 
-  generateSmartSuggestion(greoceryItems: GroceryItem[]) {
+  generateSmartSuggestions(greoceryItems: GroceryItem[]) {
     this.apiRequest.set({ items: greoceryItems });
   }
 
