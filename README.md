@@ -8,4 +8,4 @@ This repository contains personal study projects developed using Angular. Below 
 - **Project 2**: Smart Grocery Assistant (Angular 20, Vertex AI, Express)
 - **Project 3**: [Description of the project]
 
-Feel free to explore and learn from these examples!
+Feel free to explore and learn from these examples! 
